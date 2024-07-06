@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px; /* Adjust height as per your images */
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .gallery-caption {
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+        .gallery-caption h3 {
+            margin: 5px 0;
+            font-size: 1.2rem;
+        }
+
+        .gallery-caption p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Replace these image URLs with your actual room images -->
+        <div class="gallery-item">
+            <img class="gallery-img" src="images/Hotel Room Color Scheme Tips.jpg" alt="Room 1">
+            <div class="gallery-caption">
+                <h3>Standard</h3>
+                <p>Standard Room
+
+                Rate: R500 per hour
+                Our standard rooms offer comfort and convenience at an affordable rate.<br>
+                Perfect for short stays or quick getaways, these rooms are designed with your comfort in mind. <br>
+                Whether you're traveling for business or leisure, our standard rooms provide a cozy retreat with essential amenities to ensure a pleasant stay.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img class="gallery-img" src="https://via.placeholder.com/600x400" alt="Room 2">
+            <div class="gallery-caption">
+                <h3>Room 2</h3>
+                <p>Description or details about Room 2.</p>
+            </div>
+        </div>
+      <div class="gallery-item">
+            <img class="gallery-img" src="https://via.placeholder.com/600x400" alt="Room 2">
+            <div class="gallery-caption">
+                <h3>Room 3</h3>
+                <p>Description or details about Room 2.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
